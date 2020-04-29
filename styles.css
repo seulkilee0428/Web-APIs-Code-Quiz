@@ -1,45 +1,58 @@
-body {
-    background-color: #eeeeee;
-}
-
-.grid {
-    width: 600px;
-    height: 500px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 10px 50px 50px 50px;
-    border-radius: 50px;
-    border: 2px solid #cbcbcb;
-    box-shadow: 10px 15px 5px #cbcbcb;
-}
-
-.grid h1 {
+body{
+    font-size: 20px;
     font-family: "sans-serif";
-    background-color: #57636e;
-    font-size: 60px;
-    text-align: center;
-    color: #ffffff;
-    padding: 2px 0px;
-    border-radius: 50px;
+}
+#container{
+    margin: 20px 40px;
+    background-color: white;
 }
 
-#score {
-    color: #5A6772;
-    text-align: center;
-    font-size: 30px;
+#highScoreHeader{
+    font-size: 1em;
+    font-style: "sans-serif";
+    Color: #778897;
+    font-weight: normal;
+    padding: 0 20px;
+    cursor: pointer;
+}
+#startHeader{
+    font-size: 1.5em;
+    font-weight: Bold;
+    padding: 0 20px;
+}
+#startText{
+    font-size: .5cm;
+    font-weight: normal;
+    padding: 20px;
+}
+.quizBtn{
+    font-size: small;
+    font-weight: bold;
+    width: auto;
+    height: 40px;
+    Color: white;
+    background-color:#778897;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#startBtn:hover{
+    border: 3px solid #778897;
+    background-color: white;
+    color :#778897;
 }
 
-.grid #question {
-    font-family: "scans-serif";
-    font-size: 30px;
-    color: #5A6772;
+#question{
+    width:500px;
+    font-weight: bold;
+    height : 125px;
+    top:0;
 }
-
-.buttons {
-    margin-top: 30px;
+.choices{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-#btn0, #btn1, #btn2, #btn3 {
+.choice{
     background-color: #778897;
     width: 250px;
     font-size: 20px;
@@ -50,8 +63,88 @@ body {
     padding: 10px 10px;
 }
 
-
-#timer {
-    color: #2b2b2b;
-    font-size: 18px;
+.choice:hover{
+    border : 2px solid grey;
+    font-weight: bold;
 }
+/* Quiz timer */
+#timer{
+    float: right;
+    height : 100px;
+    width : 200px;
+    text-align: center;
+}
+#counter{
+    font-size: 1.5em;
+}
+#btimeGauge{
+    width: auto;
+    height : 10px;
+    border-radius: 10px;
+    background-color: lightgray;
+    margin-left : 25px;
+}
+#timeGauge{
+    height : 10px;
+    border-radius: 10px;
+    background-color: blue;
+    margin-top : -10px;
+    margin-left : 25px;
+}
+
+#progress{
+    margin-top: 5px;
+    padding: 5px;
+    text-align: right;
+}
+.prog{
+    width : 25px;
+    height : 25px;
+    border: 1px solid #000;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left : 5px;
+    margin-right : 5px;
+}
+#lastQuestGrade{
+    color: gray;
+    padding-left: 10px;
+    font-size: large;
+    font-style: "sans-serif";
+    text-align: center;
+    text-align: left;
+}
+
+#scoreContainer p{
+    font-size: 1.5em;
+    font-weight: bold;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+}
+#scoreHeader{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 0 20px;
+}
+
+#highScorListeHeader{
+    font-size: 1em;
+    font-style: "sans-serif";
+    Color: #778897;
+    font-weight: normal;
+    padding: 0 20px;
+}    
+
+#highScoreList{
+    font-size: 1em;
+    font-style: "sans-serif";
+    height: 30px;
+    Color: black;
+    background-color: lightgrey;
+    border-width: 1px;
+    border-radius: 5px;
+    font-weight: normal;
+    text-align: justify;
+    margin: 5px;
+}    
